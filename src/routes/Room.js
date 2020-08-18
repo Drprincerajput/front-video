@@ -41,7 +41,7 @@ const Room = (props) => {
 
         socketRef.current.on("ice-candidate", handleNewICECandidateMsg);
       });
-  }, ["callUser", "handleRecieveCall", "props.match.params.roomID"]);
+  }, []);
 
   // provinding data to peer for transisiting data for stream
 
